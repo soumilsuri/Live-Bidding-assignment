@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: live-bidding-backend
+    depends_on:
+      - mongo
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=production
+      - PORT=8000
+      # If MONGODB_URI is not provided from the host/.env, the app should default to this URI.
+      # You can override this by setting MONGODB_URI in an .env file or your deployment environment.
+      - MONGODB_URI=mongodb://mongo:27017/livebidding
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: live-bidding-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:7
+    container_name: live-bidding-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+
