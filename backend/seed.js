@@ -11,56 +11,56 @@ const sampleItems = [
         title: "Vintage Rolex Watch",
         startingPrice: 500,
         currentBid: 500,
-        auctionEndTime: new Date(Date.now() + 2 * 60 * 60 * 1000), // 2 hours from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "MacBook Pro M3 Max",
         startingPrice: 1500,
         currentBid: 1500,
-        auctionEndTime: new Date(Date.now() + 4 * 60 * 60 * 1000), // 4 hours from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "Sony A7 IV Camera",
         startingPrice: 800,
         currentBid: 800,
-        auctionEndTime: new Date(Date.now() + 1 * 60 * 60 * 1000), // 1 hour from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "Gibson Les Paul Guitar",
         startingPrice: 1200,
         currentBid: 1200,
-        auctionEndTime: new Date(Date.now() + 6 * 60 * 60 * 1000), // 6 hours from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "Rare Pokemon Card Set",
         startingPrice: 300,
         currentBid: 300,
-        auctionEndTime: new Date(Date.now() + 3 * 60 * 60 * 1000), // 3 hours from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "Vintage Vinyl Records Collection",
         startingPrice: 200,
         currentBid: 200,
-        auctionEndTime: new Date(Date.now() + 5 * 60 * 60 * 1000), // 5 hours from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "iPad Pro 12.9 inch",
         startingPrice: 600,
         currentBid: 600,
-        auctionEndTime: new Date(Date.now() + 30 * 60 * 1000), // 30 minutes from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
     {
         title: "Gaming PC RTX 4090",
         startingPrice: 2000,
         currentBid: 2000,
-        auctionEndTime: new Date(Date.now() + 8 * 60 * 60 * 1000), // 8 hours from now
+        auctionEndTime: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // ~30 days from now
         itemStatus: "LIVE",
     },
 ];
